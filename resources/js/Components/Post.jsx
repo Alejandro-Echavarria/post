@@ -9,6 +9,7 @@ import { useForm, usePage } from '@inertiajs/inertia-react';
 dayjs.extend(relativeTime);
 
 const Post = ({ post }) => {
+	
 	const {auth} = usePage().props;
 	const [editing, setEditing] = useState(false);
 	const {data, setData, patch, processing, reset, errors} = useForm({
@@ -65,6 +66,7 @@ const Post = ({ post }) => {
 								</Dropdown>
 							}
 					</div>
+					<small className='text-xs font-semibold text-gray-600'>{ dayjs(post.created_at).fromNow() }</small>
 					{ editing ?
 						<form onSubmit={ submit }>
 							<input 
@@ -74,6 +76,7 @@ const Post = ({ post }) => {
 								className='mb-3 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-lg shadow-sm'
 								autoFocus
 							/>
+							<InputError message={ errors.title } className='mt-2'/>
 							<textarea 
 								value={ data.body }
 								onChange={ e => setData('body', e.target.value) }
@@ -81,7 +84,7 @@ const Post = ({ post }) => {
 							>
 
 							</textarea>
-							<InputError message={ errors.message } className='mt-2'/>
+							<InputError message={ errors.body } className='mt-2'/>
 							<div className='space-x-2'>
 								<PrimaryButton className='mt-4'>
 									Save
@@ -91,7 +94,6 @@ const Post = ({ post }) => {
 						</form>
 						: (
 							<>
-								<small className='text-xs font-semibold text-gray-600'>{ dayjs(post.created_at).fromNow() }</small>
 								<p className='mt-4 text-sm text-gray-700'>{ post.title }</p>
 								<p className='mt-4 text-sm text-gray-700'>{ post.body }</p>
 							</>

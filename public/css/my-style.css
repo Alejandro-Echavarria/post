@@ -1,0 +1,248 @@
+/* body {
+    background-image: url('../img/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */
+
+.color-primario {
+    background-color: rgb(31,41,55);
+    color: white;
+}
+
+.color-secundario {
+    background-color: rgb(2, 98, 223);
+    color: white;
+}
+
+.img-post{
+    position: relative;
+    padding-bottom: 56.26%;
+}
+
+.img-post img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(139, 139, 139);
+    border-radius: 6px;
+    margin-top: 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 0.175s;
+    -webkit-transition: all 0.175s;
+    -moz-transition: all 0.175s;
+    -ms-transition: all 0.175s;
+    -o-transition: all 0.175s;
+}
+
+.label-check {
+    cursor: pointer; 
+}
+
+.input-check:checked ~ .checkbox {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 0px;
+    border-color: rgb(2, 98, 223);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.input-check {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.scrollCustom::-webkit-scrollbar-track {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(156, 156, 156) rgba(255, 166, 0, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(197, 197, 197, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:  rgb(156, 156, 156);
+    border-radius: 20px;
+    /* border: 3px solid orange; */
+}
+
+*::-webkit-scrollbar:horizontal {
+    height: 5px;
+    width: 5px;
+}
+
+/* Button color */
+.blue-color {
+    background-color: rgb(198, 227, 255);
+    color:  rgb(0, 113, 227);
+}
+
+.green-color {
+    background-color: rgb(210, 235, 210);
+    color: rgb(67, 134, 67);
+}
+
+.red-color {
+    background-color: rgb(245, 199, 199);
+    color: rgb(206, 73, 73);
+}
+
+.accordion-content {
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.iconos-color-secundario {
+    color: rgb(2, 98, 223);
+}
+
+.border-color-secundario {
+    border-color: rgb(2, 98, 223);
+}
+
+.color-logo {
+    background: rgb(31,41,55);
+    background: -moz-linear-gradient(180deg, rgba(31,41,55,1) 0%, rgba(2,98,223,1) 35%, rgba(241,245,249,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(31,41,55,1) 0%, rgba(2,98,223,1) 35%, rgba(241,245,249,1) 100%);
+    background: linear-gradient(180deg, rgba(31,41,55,1) 0%, rgba(2,98,223,1) 35%, rgba(241,245,249,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.personal-border {
+    border: 1px solid rgb(219, 219, 219);
+}
+
+
+/* Removing the up and down arrows from the input type number. */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+/* End */
+
+/* Clases para las Sweet Alerts Toastr */
+
+.colored-toast.swal2-icon-success {
+    background-color: rgb(210, 235, 210) !important;
+    color: rgb(67, 134, 67) !important;
+    padding: 8px !important;
+    box-shadow: 0px 0px 0px #000000 !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: rgb(245, 199, 199) !important;
+    color: rgb(206, 73, 73) !important;
+    padding: 8px !important;
+	box-shadow: 0px 0px 0px #000000 !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+    padding: 8px !important;
+	box-shadow: 0px 0px 0px #000000 !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: rgb(198, 227, 255) !important;
+    color:  rgb(0, 113, 227) !important;
+    padding: 8px !important;
+	box-shadow: 0px 0px 0px #000000 !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+    padding: 8px !important;
+	box-shadow: 0px 0px 0px #000000 !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
+
+@media (max-width: 476px){
+    
+    .hidden-letters{display: none;}
+    .navSticky{
+        position: sticky;
+        top: 0;
+        border: 0;
+    }
+}
